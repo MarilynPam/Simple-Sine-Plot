@@ -1,25 +1,9 @@
-##sine wave
-import numpy as np
-import matplotlib.pyplot as plt
-
-#define the sine wave function
-def sine_wave(frequency, length, sample_rate):
-    x = np.linspace(0, length, int(sample_rate * length))
-    y = np.sin(frequency * 2 * np.pi * x)
-    return x, y
-
-#define the main function to plot the sine wave
-def main():
-    frequency = 10 #frequency in Hz
-    length = 1 #length of time in seconds
-    sample_rate = 1000 #sample rate in Hz
-
-    x, y = sine_wave(frequency, length, sample_rate)
-
-    plt.plot(x, y)
-    plt.show()
-
-#call the main function
-if __name__ == "__main__":
-    main()
-    
+**Sine Wave Plotter**
+This Python script generates and plots a sine wave using the numpy and matplotlib libraries.
+*Prerequisites*
+Ensure you have the following libraries installed:
+1. **numpy**
+2. **matplotlib**
+*Usage*
+Clone the repository or download the script.
+Run the script using Python:
